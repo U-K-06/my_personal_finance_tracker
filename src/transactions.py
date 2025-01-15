@@ -3,12 +3,12 @@ from matplotlib import pyplot
 from pathlib import Path as path
 from datetime import date
 from constants import Constants
-
+import Generate_id
 class UserAccount:
     def __init__(self,user_name:str)->None:
         self.user_name:str = user_name
         self.transactions:pd.DataFrame= pd.DataFrame({'Amount':[],'Reason':[],'Date':[],'Type':[]})
-        self.id = randint(10001,100000)
+        self.id = Generate_id.generate_random_id()
         
 
 
@@ -23,7 +23,7 @@ class UserAccount:
             self.transactions.to_csv(path.joinpath(path,(file_name or self.user_name+'_user_account_data'),mode='a'))
 
     def add_transaction(self,transaction:str,reason:str,transaction_type:str)->None:
-        self.transactions['Amount'].
+        self.transactions['Amount']
         self.transactions['Reason'].combine(reason)
         self.transactions['Date'].combine(date.today())
         self.transactions['Type'].combine(transaction_type.capitalize())

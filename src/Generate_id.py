@@ -16,9 +16,8 @@ def generate_random_id():
     with open(Constants.JSON_IDS_PATH,'w') as json_file:
         json.dump(json_data,json_file)
 
+        
 def clear_ids():
     with open(Constants.JSON_IDS_PATH,'w') as json_file:
             data = {'ids':[]}
             json.dump(data,json_file)
-
-
