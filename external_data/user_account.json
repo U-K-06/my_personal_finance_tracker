@@ -1,0 +1,18 @@
+{
+    "ID": 62366,
+    "Name": "JOHN DOE",
+    "History": {
+        "Amount": [
+            100.0
+        ],
+        "Reason": [
+            "beat praku"
+        ],
+        "Date": [
+            "2025-01-19"
+        ],
+        "Type": [
+            "Given"
+        ]
+    }
+}
